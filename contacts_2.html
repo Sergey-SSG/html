@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Категории</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { display: flex; min-height: 100vh; }
+    .sidebar { width: 220px; background-color: #1c1f23; color: white; padding-top: 20px; }
+    .sidebar a { color: white; display: block; padding: 10px 20px; text-decoration: none; }
+    .sidebar a:hover, .sidebar a.active { background-color: #0d6efd; }
+    .content { flex-grow: 1; padding: 30px; }
+    .user-dropdown { position: absolute; bottom: 20px; left: 20px; }
+  </style>
+</head>
+<body>
+  <div class="sidebar d-flex flex-column justify-content-between">
+    <div>
+      <h5 class="px-3">🅱 Меню</h5>
+      <a href="index.html">🏠 Главная</a>
+      <a href="categories.html">📁 Категории</a>
+      <a href="orders.html">📦 Заказы</a>
+      <a href="contacts.html" class="active">📞 Контакты</a>
+    </div>
+    <div class="user-dropdown">
+      <div class="dropdown">
+        <a href="#" class="dropdown-toggle text-white" data-bs-toggle="dropdown">👤 Пользователь</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Профиль</a></li>
+          <li><a class="dropdown-item" href="#">Выход</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<div class="content">
+  <h2>Контакты</h2>
+  <p>Свяжитесь с нами по следующим каналам:</p>
+  <ul class="list-unstyled mt-4">
+    <li>📧 Email: support@example.com</li>
+    <li>📞 Телефон: +7 (123) 456-78-90</li>
+    <li>📍 Адрес: Москва, ул. Примерная, д.1</li>
+  </ul>
+  <form class="mt-4">
+    <div class="mb-3">
+      <label for="name" class="form-label">Имя</label>
+      <input type="text" class="form-control" id="name" placeholder="Ваше имя">
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label">Сообщение</label>
+      <textarea class="form-control" id="message" rows="3" placeholder="Ваше сообщение"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Отправить</button>
+  </form>
+</div>

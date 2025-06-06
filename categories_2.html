@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Категории</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { display: flex; min-height: 100vh; }
+    .sidebar { width: 220px; background-color: #1c1f23; color: white; padding-top: 20px; }
+    .sidebar a { color: white; display: block; padding: 10px 20px; text-decoration: none; }
+    .sidebar a:hover, .sidebar a.active { background-color: #0d6efd; }
+    .content { flex-grow: 1; padding: 30px; }
+    .user-dropdown { position: absolute; bottom: 20px; left: 20px; }
+  </style>
+</head>
+<body>
+  <div class="sidebar d-flex flex-column justify-content-between">
+    <div>
+      <h5 class="px-3">🅱 Меню</h5>
+      <a href="index.html">🏠 Главная</a>
+      <a href="categories.html" class="active">📁 Категории</a>
+      <a href="orders.html">📦 Заказы</a>
+      <a href="contacts.html">📞 Контакты</a>
+    </div>
+    <div class="user-dropdown">
+      <div class="dropdown">
+        <a href="#" class="dropdown-toggle text-white" data-bs-toggle="dropdown">👤 Пользователь</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Профиль</a></li>
+          <li><a class="dropdown-item" href="#">Выход</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <h2>Категории</h2>
+    <p>Здесь отображаются все доступные категории товаров.</p>
+    <ul class="list-group mt-4">
+      <li class="list-group-item">📱 Электроника</li>
+      <li class="list-group-item">👕 Одежда</li>
+      <li class="list-group-item">📚 Книги</li>
+      <li class="list-group-item">🏠 Дом и сад</li>
+    </ul>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
